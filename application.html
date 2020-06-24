@@ -3,24 +3,98 @@
   <head>
     <meta charset="utf-8">
     <title>Forms</title>
+    <!--  jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
     <link href= "index.css" rel="stylesheet"></link>
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
   </head>
   <body>
     <div class="container">
-      <h1 id="header"> Form Templates</h1>
-    </div>
-    <div class="container">
-      <div class="buttons_div">
-          <button type="button" class="btn btn-primary" id="reservation_button" >Reservation</button>
-          <button type="button" class="btn btn-primary" id="application_button" >Application</button>
-    
-      </div>
+            <form>
+              <div class="form-group">
+                  <label id="application_title" for="exampleInputEmail1">We are happy that you want to be part of the team.</label>
+             </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input type="text" class="form-control"  placeholder="First Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">Last Name</label>
+                  <input type="text" class="form-control" placeholder="Last Name" required>
+                </div>
+              </div>
 
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">Email</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><img class="icons" src="icons/email.png" ></div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="name@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">Phone</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text"><img class="icons" src="icons/phone.svg" ></div>
+                          </div>
+                          <input type="text" class="form-control" pattern="\d{10}" placeholder="Format: 1234567890" required>
+                        </div>
+                      </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                  <div class="form-group col-md-12">
+                      <label for="exampleInputEmail1">Position Aplied</label>
+                      <select id="select_position" class="form-control">
+                        <option>Web Developer</option>
+                        <option>Software Engineer</option>
+                        <option>Python Developer</option>
+                        <option>Data Scientist</option>
+                        </select>
+                  </div>
+                </div>
+
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Part Time
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Full Time
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">What are your workplace skils</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Upload your Resume and List of References</label>
+                  <input type="file" class="form-control-file" required >
+                </div>
+
+              <div id="application_button">
+                  <button type="submit"   class="btn btn-primary">Send</button>
+              </div>
+              </form>
     </div>
 
-    <script type="text/javascript" src="weather.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

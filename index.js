@@ -1,3 +1,10 @@
+var date = new Date();
+date.setDate(date.getDate()-1);
+
+$('#date').datepicker({ 
+    startDate: date
+});
+
 
 $(document).ready(function(){
     var date_input=$('input[name="date"]'); //our date input has the name "date"

@@ -22,10 +22,10 @@
              </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                    <input type="text" class="form-control"  placeholder="First Name">
+                    <input type="text" class="form-control"  placeholder="First Name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Last Name">
+                  <input type="text" class="form-control" placeholder="Last Name" required>
                 </div>
               </div>
               <div class="form-group">
@@ -33,7 +33,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><img class="icons" src="icons/phone.svg" ></div>
                   </div>
-                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Format: 1234567890">
+                  <input type="text" class="form-control" pattern="\d{10}" placeholder="Format: 1234567890" required>
                 </div>
               </div>
 
@@ -42,7 +42,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><img class="icons" src="icons/email.png" ></div>
                   </div>
-                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="name@example.com">
+                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="name@example.com" required>
                 </div>
               </div>
 
@@ -51,7 +51,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><img class="icons" src="icons/calendar.png" ></div>
                   </div>
-                  <input type="text" class="form-control" id="date" name="date" placeholder="dd/mm/2020">
+                  <input type="text" class="form-control" id="date" name="date" placeholder="dd/mm/2020" required>
                 </div>
               </div>
 
@@ -79,7 +79,7 @@
                     </div>
               </div>
               <div id="reserve_button">
-                  <button type="submit"   class="btn btn-outline-primary">Reserve</button>
+                  <button type="submit"   class="btn btn-primary">Reserve</button>
               </div>
               </form>
     </div>
