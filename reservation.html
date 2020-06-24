@@ -1,0 +1,89 @@
+<DOCTYPE! HTML>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <!--  jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <link href= "index.css" rel="stylesheet"></link>
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+  </head>
+  <body>
+    <div class="container">
+            <form>
+              <div class="form-group">
+                  <label id="reservation_title" for="exampleInputEmail1">Reservation</label>
+             </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control"  placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><img class="icons" src="icons/phone.svg" ></div>
+                  </div>
+                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Format: 1234567890">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><img class="icons" src="icons/email.png" ></div>
+                  </div>
+                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="name@example.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><img class="icons" src="icons/calendar.png" ></div>
+                  </div>
+                  <input type="text" class="form-control" id="date" name="date" placeholder="dd/mm/2020">
+                </div>
+              </div>
+
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><img class="icons" src="icons/clock.svg" ></div>
+                      </div>
+                      <select id="select_hours" class="form-control">
+
+                      </select>
+                      </div>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><img class="icons" src="icons/person.svg" ></div>
+                        </div>
+                        <select id="select_person" class="form-control">
+
+                        </select>
+                        </div>
+                    </div>
+              </div>
+              <div id="reserve_button">
+                  <button type="submit"   class="btn btn-outline-primary">Reserve</button>
+              </div>
+              </form>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
