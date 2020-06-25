@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Forms</title>
     <!--  jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
@@ -16,16 +15,23 @@
   </head>
   <body>
     <div class="container">
-            <form>
+        <div class="buttons_nav">
+            <a class="btn btn-primary" id="reservation_button" href="index.html">Go to Main Page</a>
+            <a class="btn btn-primary" id="application_button" href="application.html">Go to Application</a>
+        </div>
+  
+      </div>
+    <div class="container">
+            <form action="" method="POST">
               <div class="form-group">
                   <label id="reservation_title" for="exampleInputEmail1">Reservation</label>
              </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                    <input type="text" class="form-control"  placeholder="First Name" required>
+                    <input type="text" class="form-control" id="first_name" placeholder="First Name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Last Name" required>
+                  <input type="text" class="form-control" id="last_name" placeholder="Last Name" required>
                 </div>
               </div>
               <div class="form-group">
@@ -33,7 +39,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><img class="icons" src="icons/phone.svg" ></div>
                   </div>
-                  <input type="text" class="form-control" pattern="\d{10}" placeholder="Format: 1234567890" required>
+                  <input type="text" class="form-control" id="phone" pattern="\d{10}" placeholder="Format: 1234567890" required>
                 </div>
               </div>
 
@@ -42,7 +48,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><img class="icons" src="icons/email.png" ></div>
                   </div>
-                  <input type="email"  class="form-control"  placeholder="name@example.com" required>
+                  <input type="email" id="email" class="form-control"  placeholder="name@example.com" required>
                 </div>
               </div>
 
@@ -51,7 +57,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><img class="icons" src="icons/calendar.png" ></div>
                   </div>
-                  <input type="text" class="form-control" id="date" name="date" placeholder="dd/mm/2020" required>
+                  <input type="text" id="date" class="form-control" id="date" name="date" placeholder="dd/mm/2020" required>
                 </div>
               </div>
 
@@ -79,11 +85,31 @@
                     </div>
               </div>
               <div id="reserve_button">
-                  <button type="submit"   class="btn btn-primary">Reserve</button>
+                  <button type="submit"  id="reservetion_button" class="btn btn-primary">Reserve</button>
               </div>
               </form>
     </div>
 
-    <script type="text/javascript" src="index.js"></script>
+    <div class="container">
+        <div class="col-md-12">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Phone</th>
+                  <th>Date</th>
+                  <th>People</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+              </tbody>
+            </table>
+            <br>
+            <br>
+          </div>
+      </div>
+
+    <script type="text/javascript" src="reservation.js"></script>
   </body>
 </html>
