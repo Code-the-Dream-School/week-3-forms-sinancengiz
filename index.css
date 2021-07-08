@@ -2,3 +2,46 @@ body{
   margin: 0;
   padding: 0;
 }
+
+body{
+  background-color:gray;
+}
+
+#header{
+  text-align: center;
+  margin-top: 20%;
+}
+
+.buttons_div{
+  text-align: center;
+}
+
+#reservation_title{
+  font-size: 30px;
+  margin-top: 5%
+}
+
+.icons{
+  height: 15px;
+}
+
+#reserve_button{
+  text-align: center;
+}
+
+form{
+  width: 70%;
+  margin-left:15%;
+
+}
+
+#application_title{
+  margin-top:5%;
+  text-align: center;
+  font-size:15px;
+}
+
+table{
+  margin-top: 5%;
+  margin-bottom: 100px;
+}

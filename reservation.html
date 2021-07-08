@@ -1,0 +1,115 @@
+<DOCTYPE! HTML>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <!--  jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <link href= "index.css" rel="stylesheet"></link>
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+  </head>
+  <body>
+    <div class="container">
+        <div class="buttons_nav">
+            <a class="btn btn-primary" id="reservation_button" href="index.html">Go to Main Page</a>
+            <a class="btn btn-primary" id="application_button" href="application.html">Go to Application</a>
+        </div>
+  
+      </div>
+    <div class="container">
+            <form action="" method="POST">
+              <div class="form-group">
+                  <label id="reservation_title" for="exampleInputEmail1">Reservation</label>
+             </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="first_name" placeholder="First Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="last_name" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><img class="icons" src="icons/phone.svg" ></div>
+                  </div>
+                  <input type="text" class="form-control" id="phone" pattern="\d{10}" placeholder="Format: 1234567890" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><img class="icons" src="icons/email.png" ></div>
+                  </div>
+                  <input type="email" id="email" class="form-control"  placeholder="name@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><img class="icons" src="icons/calendar.png" ></div>
+                  </div>
+                  <input type="text" id="date" class="form-control" id="date" name="date" autocomplete="off" placeholder="dd/mm/2020" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><img class="icons" src="icons/clock.svg" ></div>
+                      </div>
+                      <select id="select_hours" class="form-control">
+
+                      </select>
+                      </div>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><img class="icons" src="icons/person.svg" ></div>
+                        </div>
+                        <select id="select_person" class="form-control">
+
+                        </select>
+                        </div>
+                    </div>
+              </div>
+              <div id="reserve_button">
+                  <button type="submit"  id="reservetion_button" class="btn btn-primary">Reserve</button>
+              </div>
+              </form>
+    </div>
+
+    <div class="container">
+        <div class="col-md-12">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Phone</th>
+                  <th>Date</th>
+                  <th>People</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+              </tbody>
+            </table>
+            <br>
+            <br>
+          </div>
+      </div>
+
+    <script type="text/javascript" src="reservation.js"></script>
+  </body>
+</html>
